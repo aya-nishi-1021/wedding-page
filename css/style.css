@@ -1,0 +1,936 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Santana-Script';
+  src: url("../fonts/Santana Script.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  color: #4b4b4b;
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
+  display: none;
+}
+
+.nav-wrapper .nav__close-button {
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  text-align: center;
+  width: 30px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.nav-wrapper ul {
+  width: 100%;
+  height: 70%;
+  padding: 0;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.nav-wrapper ul .nav__item {
+  width: 100%;
+  margin: 4px 0;
+  padding: 0;
+  font-size: 48px;
+  font-family: 'Santana-Script';
+  list-style: none;
+}
+
+.nav-wrapper ul .nav__item a {
+  color: #4b4b4b;
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(247, 247, 247, 0.5);
+  z-index: 500;
+}
+
+.header__left {
+  float: left;
+}
+
+.header__left__logo__img {
+  width: 84px;
+  margin: 4px 30px 0;
+}
+
+.header__right {
+  float: right;
+}
+
+.header__right__nav {
+  margin-right: 30px;
+}
+
+.header__right__nav__item {
+  float: left;
+  margin-left: 50px;
+  list-style: none;
+  font-size: 28px;
+  font-family: 'Santana-Script';
+}
+
+.header__right__nav__item a {
+  color: #4b4b4b;
+  text-decoration: none;
+}
+
+.top {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: auto;
+  padding-top: 60%;
+}
+
+.top__nav-bar {
+  display: none;
+}
+
+.top__main-img {
+  display: inline-block;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+}
+
+.top__wrapper {
+  position: absolute;
+  top: 16%;
+  right: 14%;
+  text-align: center;
+  z-index: 100;
+}
+
+.top__wrapper__title {
+  font-family: 'Santana-Script';
+  font-size: 100px;
+  letter-spacing: 5px;
+}
+
+.top__wrapper__sub-title {
+  margin-top: 10px;
+  font-family: 'Orator Std';
+  font-size: 30px;
+}
+
+.top__wrapper__date {
+  font-family: 'Santana-Script';
+  font-size: 20px;
+  letter-spacing: 6px;
+}
+
+.message {
+  position: relative;
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.message__title {
+  margin: 50px 0;
+  font-size: 60px;
+  font-family: 'Santana-Script';
+}
+
+.message__title__deco {
+  width: 15px;
+  margin-bottom: 2%;
+}
+
+.message__content {
+  position: relative;
+  top: 50%;
+}
+
+.message__content__back-img {
+  z-index: 0;
+  width: 60%;
+}
+
+.message__content__text {
+  z-index: 10;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 3px;
+}
+
+.message__illust-love-flag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+}
+
+.message__illust-rose-1 {
+  position: absolute;
+  right: 0;
+  bottom: -5%;
+  width: 70px;
+}
+
+.message__illust-rose-2 {
+  position: absolute;
+  right: -5%;
+  bottom: -5%;
+  width: 60px;
+  transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+}
+
+.place {
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+  width: 70%;
+}
+
+.place__title {
+  margin: 50px 0;
+  font-size: 60px;
+  font-family: 'Santana-Script';
+}
+
+.place__title__deco {
+  width: 15px;
+  margin-bottom: 2%;
+}
+
+.place__chapel {
+  position: relative;
+  height: 500px;
+  margin: 200px 0;
+}
+
+.place__chapel__illust-high‐heel {
+  position: absolute;
+  top: -10%;
+  right: 16%;
+  width: 100px;
+}
+
+.place__chapel__illust-ring {
+  position: absolute;
+  top: -30%;
+  right: 0;
+  width: 60px;
+}
+
+.place__chapel__main-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 60%;
+}
+
+.place__chapel__title {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  font-family: 'Savoye LET';
+  font-size: 140px;
+  transform: rotate(-12deg);
+  -moz-transform: rotate(-12deg);
+  -webkit-transform: rotate(-12deg);
+  z-index: 100;
+}
+
+.place__chapel__text-box {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  width: 60%;
+  height: 70%;
+  vertical-align: middle;
+  background-color: #f4ebe7;
+}
+
+.place__chapel__text-box__title {
+  display: none;
+}
+
+.place__chapel__text-box__text {
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.place__chapel__text-box__text--for-tablet {
+  display: none;
+}
+
+.place__banquet {
+  position: relative;
+  height: 500px;
+  margin: 200px 0;
+}
+
+.place__banquet__illust-champagne {
+  position: absolute;
+  top: -40%;
+  left: -5%;
+  width: 120px;
+}
+
+.place__banquet__illust-cake {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 120px;
+}
+
+.place__banquet__main-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  z-index: 100;
+}
+
+.place__banquet__title {
+  position: absolute;
+  top: 10%;
+  left: 4%;
+  font-family: 'Savoye LET';
+  font-size: 140px;
+  transform: rotate(-12deg);
+  -moz-transform: rotate(-12deg);
+  -webkit-transform: rotate(-12deg);
+  z-index: 100;
+}
+
+.place__banquet__text-box {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 60%;
+  height: 70%;
+  vertical-align: middle;
+  background-color: #dedddb;
+}
+
+.place__banquet__text-box__title {
+  display: none;
+}
+
+.place__banquet__text-box__text {
+  position: absolute;
+  bottom: 20%;
+  left: 16%;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.schedule {
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+  position: relative;
+}
+
+.schedule__title {
+  margin: 50px 0;
+  font-size: 60px;
+  font-family: 'Santana-Script';
+}
+
+.schedule__title__deco {
+  width: 15px;
+  margin-bottom: 2%;
+}
+
+.schedule__illust-balloon-1 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 100px;
+  z-index: 100;
+}
+
+.schedule__illust-balloon-2 {
+  position: absolute;
+  bottom: 30%;
+  right: 10%;
+  width: 100px;
+  z-index: 100;
+}
+
+.schedule__content {
+  position: relative;
+  width: 70%;
+  margin: 100px auto;
+  padding: 120px 20px;
+  background-color: #eef5e7;
+  box-shadow: 10px 10px 20px #dedddb;
+  z-index: 0;
+}
+
+.schedule__content__dots-line {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  width: 1px;
+  height: 90%;
+  border-left: 1px dashed rgba(75, 75, 75, 0.4);
+  z-index: 50;
+}
+
+.schedule__content__reception {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 60px 0;
+  margin-top: 0;
+}
+
+.schedule__content__reception__left {
+  width: 33%;
+}
+
+.schedule__content__reception__left__time {
+  display: none;
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #4e4e4e;
+  color: #fff;
+  font-family: 'Santana-Script';
+  letter-spacing: 4px;
+}
+
+.schedule__content__reception__left__title {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 1px dashed #4e4e4e;
+  font-size: 20px;
+}
+
+.schedule__content__reception__left__title span {
+  margin-left: 10px;
+}
+
+.schedule__content__reception__left__title span {
+  font-family: 'Santana-Script';
+  font-size: 20px;
+}
+
+.schedule__content__reception__left__img {
+  display: none;
+}
+
+.schedule__content__reception__center {
+  width: 20%;
+  z-index: 100;
+}
+
+.schedule__content__reception__center__text {
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #4e4e4e;
+  color: #fff;
+  font-family: 'Santana-Script';
+  letter-spacing: 4px;
+}
+
+.schedule__content__reception__right {
+  position: relative;
+  width: 33%;
+  height: 200px;
+}
+
+.schedule__content__reception__right__reception-img-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.schedule__content__reception__right__reception-img-2 {
+  position: absolute;
+  top: -25%;
+}
+
+.schedule__content__ceremony {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 60px 0;
+}
+
+.schedule__content__ceremony__left {
+  width: 33%;
+  height: 200px;
+}
+
+.schedule__content__ceremony__center {
+  width: 20%;
+  z-index: 100;
+}
+
+.schedule__content__ceremony__center__text {
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #4e4e4e;
+  color: #fff;
+  font-family: 'Santana-Script';
+  letter-spacing: 4px;
+}
+
+.schedule__content__ceremony__right {
+  width: 33%;
+}
+
+.schedule__content__ceremony__right__title {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 1px dashed #4e4e4e;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule__content__ceremony__right__title span {
+  margin-left: 10px;
+}
+
+.schedule__content__ceremony__right__title__ja {
+  display: inline-block;
+}
+
+.schedule__content__ceremony__right__title__en {
+  display: inline-block;
+  font-family: 'Santana-Script';
+  font-size: 20px;
+  line-height: 14px;
+}
+
+.schedule__content__ceremony__right__time {
+  display: none;
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #4e4e4e;
+  color: #fff;
+  font-family: 'Santana-Script';
+  letter-spacing: 4px;
+}
+
+.schedule__content__ceremony__right__img {
+  display: none;
+}
+
+.schedule__content__welcome-party {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 60px 0;
+}
+
+.schedule__content__welcome-party__left {
+  width: 33%;
+}
+
+.schedule__content__welcome-party__left__title {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 1px dashed #4e4e4e;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule__content__welcome-party__left__title span {
+  margin-left: 10px;
+}
+
+.schedule__content__welcome-party__left__title__ja {
+  display: inline-block;
+  line-height: 24px;
+}
+
+.schedule__content__welcome-party__left__title__en {
+  display: inline-block;
+  font-family: 'Santana-Script';
+  font-size: 20px;
+  line-height: 14px;
+}
+
+.schedule__content__welcome-party__left__time {
+  display: none;
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #4e4e4e;
+  color: #fff;
+  font-family: 'Santana-Script';
+  letter-spacing: 4px;
+}
+
+.schedule__content__welcome-party__left__img {
+  display: none;
+}
+
+.schedule__content__welcome-party__center {
+  width: 20%;
+  z-index: 100;
+}
+
+.schedule__content__welcome-party__center__text {
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #4e4e4e;
+  color: #fff;
+  font-family: 'Santana-Script';
+  letter-spacing: 4px;
+}
+
+.schedule__content__welcome-party__right {
+  width: 33%;
+  height: 200px;
+}
+
+.schedule__content__banquet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 60px 0;
+}
+
+.schedule__content__banquet__left {
+  width: 33%;
+  height: 200px;
+  position: relative;
+  margin-top: 60px;
+}
+
+.schedule__content__banquet__left__banquet-img-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.schedule__content__banquet__left__banquet-img-2 {
+  position: absolute;
+  top: -25%;
+}
+
+.schedule__content__banquet__center {
+  width: 20%;
+  z-index: 100;
+}
+
+.schedule__content__banquet__center__text {
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #4e4e4e;
+  color: #fff;
+  font-family: 'Santana-Script';
+  letter-spacing: 4px;
+}
+
+.schedule__content__banquet__right {
+  width: 33%;
+}
+
+.schedule__content__banquet__right__title {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 1px dashed #4e4e4e;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule__content__banquet__right__title span {
+  margin-left: 10px;
+}
+
+.schedule__content__banquet__right__title__ja {
+  display: inline-block;
+}
+
+.schedule__content__banquet__right__title__en {
+  display: inline-block;
+  font-family: 'Santana-Script';
+  font-size: 20px;
+  line-height: 14px;
+}
+
+.schedule__content__banquet__right__time {
+  display: none;
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #4e4e4e;
+  color: #fff;
+  font-family: 'Santana-Script';
+  letter-spacing: 4px;
+}
+
+.schedule__content__banquet__right__img {
+  display: none;
+}
+
+.schedule__content__sending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 60px 0;
+  margin-bottom: 0;
+}
+
+.schedule__content__sending__left {
+  width: 33%;
+}
+
+.schedule__content__sending__left__title {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 1px dashed #4e4e4e;
+  font-size: 20px;
+}
+
+.schedule__content__sending__left__title span {
+  margin-left: 10px;
+}
+
+.schedule__content__sending__left__title span {
+  font-family: 'Santana-Script';
+  font-size: 20px;
+}
+
+.schedule__content__sending__left__time {
+  display: none;
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #4e4e4e;
+  color: #fff;
+  font-family: 'Santana-Script';
+  letter-spacing: 4px;
+}
+
+.schedule__content__sending__left__img {
+  display: none;
+}
+
+.schedule__content__sending__center {
+  width: 20%;
+  z-index: 100;
+}
+
+.schedule__content__sending__center__text {
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+  border-radius: 20px;
+  background-color: #4e4e4e;
+  color: #fff;
+  font-family: 'Santana-Script';
+  letter-spacing: 4px;
+}
+
+.schedule__content__sending__right {
+  width: 33%;
+  height: 200px;
+}
+
+.access {
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+  width: 70%;
+  height: 600px;
+  margin-bottom: 150px;
+}
+
+.access__title {
+  margin: 50px 0;
+  font-size: 60px;
+  font-family: 'Santana-Script';
+  margin-bottom: 100px;
+}
+
+.access__title__deco {
+  width: 15px;
+  margin-bottom: 2%;
+}
+
+.access__content {
+  display: flex;
+  align-items: center;
+  float: left;
+  text-align: left;
+  width: 40%;
+}
+
+.access__content__list li {
+  margin: 20px 0;
+  list-style: none;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.access__content__list li::before {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  left: -10px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #f4ebe7;
+}
+
+.access__content__list__text {
+  margin-top: 10px;
+  padding-top: 0px;
+  margin-left: 24px;
+  font-size: 14px;
+}
+
+.access__map {
+  float: right;
+  width: 60%;
+  height: 100px;
+}
+
+.works {
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+  width: 70%;
+  margin-bottom: 150px;
+}
+
+.works__title {
+  margin: 50px 0;
+  font-size: 60px;
+  font-family: 'Santana-Script';
+  margin-bottom: 100px;
+}
+
+.works__title__deco {
+  width: 15px;
+  margin-bottom: 2%;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  padding-top: 10px;
+  background-color: #cccccc;
+  text-align: center;
+}
+
+.footer__page-top-button {
+  position: absolute;
+  top: -60px;
+  right: 40px;
+}
+
+.footer__page-top-button__img {
+  width: 40px;
+}
+
+.footer__sns__item {
+  margin: 0 20px;
+}
+
+.footer__sns__item__icon {
+  width: 30px;
+  color: #262626;
+}
+
+.footer__copyright {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.works-contents .opening-movie {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.works-contents .opening-movie__mp4 {
+  width: 100%;
+}
+
+.works-contents .ending-movie {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.works-contents .ending-movie__mp4 {
+  width: 100%;
+}
