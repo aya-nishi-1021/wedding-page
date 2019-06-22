@@ -438,6 +438,9 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .footer__page-top-button {
+    right: 20px;
+  }
   .footer__copyright {
     width: 90%;
     margin: 0 auto;
@@ -462,6 +465,7 @@
   }
   .works-contents .profile-book {
     width: 100%;
+    margin-bottom: 100px;
   }
   .works-contents .profile-book__title {
     margin-bottom: 40px;

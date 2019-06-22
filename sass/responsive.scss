@@ -580,6 +580,11 @@
         height: 60px;
         padding-top: 10px;
         padding-bottom: 10px;
+
+        &__page-top-button {
+            right: 20px;
+        }
+
         &__copyright {
             width: 90%;
             margin: 0 auto;
@@ -610,6 +615,7 @@
 
         .profile-book {
             width: 100%;
+            margin-bottom: 100px;
 
             &__title {
                 margin-bottom: 40px;
