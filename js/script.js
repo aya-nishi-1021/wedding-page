@@ -15,6 +15,7 @@ $(function() {
     sr.reveal('.works__title', { easing: 'ease', duration: 1500, distance: '100px', opacity: 1, scale: 1 });
     sr.reveal('.works__contents', { easing: 'ease', duration: 1500, distance: '100px', opacity: 1, scale: 1 });
 
+    // ぬるっと移動
     $('a[href^="#"]' + 'a:not(".carousel-control")').click(function(){ 
         $('#menu-cover').fadeOut();
         var speed = 1500; 

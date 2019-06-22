@@ -917,9 +917,21 @@ body {
   font-size: 12px;
 }
 
+.works-contents {
+  margin: 160px auto 0;
+  width: 90%;
+}
+
 .works-contents .opening-movie {
   width: 80%;
   margin: 0 auto;
+}
+
+.works-contents .opening-movie__title {
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 54px;
+  font-family: 'Santana-Script';
 }
 
 .works-contents .opening-movie__mp4 {
@@ -928,9 +940,36 @@ body {
 
 .works-contents .ending-movie {
   width: 80%;
-  margin: 0 auto;
+  margin: 160px auto;
+}
+
+.works-contents .ending-movie__title {
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 54px;
+  font-family: 'Santana-Script';
 }
 
 .works-contents .ending-movie__mp4 {
+  width: 100%;
+}
+
+.works-contents .profile-book {
+  width: 80%;
+  margin: 0 auto 160px;
+}
+
+.works-contents .profile-book__title {
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 54px;
+  font-family: 'Santana-Script';
+}
+
+.works-contents .profile-book__contents {
+  text-align: center;
+}
+
+.works-contents .profile-book__contents img {
   width: 100%;
 }

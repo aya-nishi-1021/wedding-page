@@ -442,4 +442,29 @@
     width: 90%;
     margin: 0 auto;
   }
+  .works-contents {
+    margin-top: 80px;
+  }
+  .works-contents .opening-movie {
+    width: 100%;
+  }
+  .works-contents .opening-movie__title {
+    margin-bottom: 40px;
+    font-size: 44px;
+  }
+  .works-contents .ending-movie {
+    width: 100%;
+    margin: 100px auto;
+  }
+  .works-contents .ending-movie__title {
+    margin-bottom: 40px;
+    font-size: 44px;
+  }
+  .works-contents .profile-book {
+    width: 100%;
+  }
+  .works-contents .profile-book__title {
+    margin-bottom: 40px;
+    font-size: 44px;
+  }
 }

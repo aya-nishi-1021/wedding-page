@@ -797,9 +797,19 @@ body {
 }
 
 .works-contents {
+  margin: 160px auto 0;
+  width: 90%;
+
   .opening-movie {
     width: 80%;
     margin: 0 auto;
+
+    &__title {
+      margin-bottom: 100px;
+      text-align: center;
+      font-size: 54px;
+      font-family: 'Santana-Script';
+    }
 
     &__mp4 {
       width: 100%;
@@ -808,10 +818,37 @@ body {
 
   .ending-movie {
     width: 80%;
-    margin: 0 auto;
+    margin: 160px auto;
+
+    &__title {
+      margin-bottom: 100px;
+      text-align: center;
+      font-size: 54px;
+      font-family: 'Santana-Script';
+    }
 
     &__mp4 {
       width: 100%;
+    }
+  }
+
+  .profile-book {
+    width: 80%;
+    margin: 0 auto 160px;
+
+    &__title {
+      margin-bottom: 100px;
+      text-align: center;
+      font-size: 54px;
+      font-family: 'Santana-Script';
+    }
+
+    &__contents {
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
