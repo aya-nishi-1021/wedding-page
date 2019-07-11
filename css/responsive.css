@@ -455,6 +455,14 @@
     margin-bottom: 40px;
     font-size: 44px;
   }
+  .works-contents .profile-movie {
+    width: 100%;
+    margin: 100px auto;
+  }
+  .works-contents .profile-movie__title {
+    margin-bottom: 40px;
+    font-size: 44px;
+  }
   .works-contents .ending-movie {
     width: 100%;
     margin: 100px auto;

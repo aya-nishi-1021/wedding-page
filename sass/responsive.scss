@@ -603,6 +603,16 @@
             }
         }
 
+        .profile-movie {
+            width: 100%;
+            margin: 100px auto;
+
+            &__title {
+                margin-bottom: 40px;
+                font-size: 44px;
+            }
+        }
+
         .ending-movie {
             width: 100%;
             margin: 100px auto;

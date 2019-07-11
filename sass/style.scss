@@ -816,6 +816,22 @@ body {
     }
   }
 
+  .profile-movie {
+    width: 80%;
+    margin: 160px auto;
+
+    &__title {
+      margin-bottom: 100px;
+      text-align: center;
+      font-size: 54px;
+      font-family: 'Santana-Script';
+    }
+
+    &__mp4 {
+      width: 100%;
+    }
+  }
+
   .ending-movie {
     width: 80%;
     margin: 160px auto;
